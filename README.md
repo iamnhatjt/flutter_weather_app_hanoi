@@ -13,7 +13,7 @@
 
 ## Thank you
 
-[mran Hossen] (https://dribbble.com/imran_ux) A special thanks to you for their amazing design work!.
+[mran Hossen] (https://dribbble.com/imran_ux) A special thanks to you for your amazing design work!.
 
-<img src="https://github.com/iamnhatjt/flutter_weather_app_hanoi/screen_shot/first_design.png" alt="Flutter Weather App Preview" width=50% height=50%>
-<img src="https://github.com/iamnhatjt/flutter_weather_app_hanoi/screen_shot/sendcond_design.png" alt="Flutter Weather App Preview" width=50% height=50%>
+<img src="https://github.com/iamnhatjt/flutter_weather_app_hanoi/blob/main/screen_shot/first_design.png" alt="Flutter Weather App Preview" width=50% height=50%>
+<img src="https://github.com/iamnhatjt/flutter_weather_app_hanoi/blob/main/screen_shot/sendcond_design.png" alt="Flutter Weather App Preview" width=50% height=50%>
