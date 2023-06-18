@@ -8,4 +8,8 @@ class PathImage {
   static const iconpop = '$_internalPath/pop.png';
   static const iconHumidity = '$_internalPath/humidity.png';
   static const iconRain = '$_internalPath/rain.png';
+  static const iconLightRain = '$_internalPath/light_rain.png';
+  static const iconModerate = '$_internalPath/moderate_rain.png';
+  static const iconOvercastClouds = '$_internalPath/overcast_clouds.png';
+  static const iconScatterdClouds = '$_internalPath/scattered_clouds.png';
 }

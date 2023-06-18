@@ -61,8 +61,7 @@ class ShowMainWeather extends StatelessWidget {
                         ],
                       ),
                       child: Image.asset(
-                        // change right here
-                        selectedWeather.main.toPathImage(),
+                        selectedWeather.description.toPathImage(),
                         fit: BoxFit.contain,
                         height: 150,
                         width: 150,

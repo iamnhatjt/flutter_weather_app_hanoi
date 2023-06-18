@@ -50,7 +50,7 @@ class ShowDetailDay extends StatelessWidget {
             ),
             Expanded(
               child: Image.asset(
-                weatherModel.main.toPathImage(),
+                weatherModel.description.toPathImage(),
                 fit: BoxFit.contain,
                 height: 40,
                 width: 40,

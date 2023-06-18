@@ -45,7 +45,14 @@ class ShowMoreWeather extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  ...List.generate(4, (index) {
+                  ...List.generate(
+                      context
+                          .watch<WeatherProvider>()
+                          .listDayWeathers(
+                              dayFromNow: context
+                                  .watch<WeatherProvider>()
+                                  .indexSelectedDate)
+                          .length, (index) {
                     final weatherModel = context
                         .watch<WeatherProvider>()
                         .listDayWeathers(
@@ -99,23 +106,28 @@ class ShowMoreWeather extends StatelessWidget {
                               )),
                             ),
                           ),
-                          Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Image.asset(
-                                weatherModel.main.toPathImage(),
-                                height: 30,
-                                width: 30,
-                                fit: BoxFit.contain,
-                              ),
-                              Text(
-                                weatherModel.main,
-                                style: const TextStyle(
-                                    color: Color(0xFF5e9afd),
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w500),
-                              )
-                            ],
+                          SizedBox(
+                            width: 100,
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  weatherModel.description.toPathImage(),
+                                  height: 30,
+                                  width: 30,
+                                  fit: BoxFit.contain,
+                                ),
+                                Text(
+                                  weatherModel.main,
+                                  style: const TextStyle(
+                                      overflow: TextOverflow.ellipsis,
+                                      color: Color(0xFF5e9afd),
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500),
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),

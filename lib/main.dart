@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => WeatherProvider(),
       builder: (context, child) => MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Builder(builder: (context) {
           return context.watch<WeatherProvider>().isGoodApi
               ? const MyHomePage()
