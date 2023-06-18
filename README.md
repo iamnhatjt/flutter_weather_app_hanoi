@@ -1,16 +1,19 @@
-# test_company
+<h1 align="center">Flutter Weather</h1>
+<h2 align="center">Updated to Flutter 3.0</h2>
 
-A new Flutter project.
+## Packages in use
 
-## Getting Started
+- [provider] for sate management
+- [dio] for talking to the REST API
 
-This project is a starting point for a Flutter application.
+## Supported Features
 
-A few resources to get you started if this is your first Flutter project:
+- [x] Current weather (condition and temperature)
+- [x] 5-day weather forecast
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Thank you
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[mran Hossen] (https://dribbble.com/imran_ux) A special thanks to you for their amazing design work!.
+
+<img src="https://github.com/iamnhatjt/flutter_weather_app_hanoi/screen_shot/first_design.png" alt="Flutter Weather App Preview" width=50% height=50%>
+<img src="https://github.com/iamnhatjt/flutter_weather_app_hanoi/screen_shot/sendcond_design.png" alt="Flutter Weather App Preview" width=50% height=50%>
