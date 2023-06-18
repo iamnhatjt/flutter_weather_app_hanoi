@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:test_company/provider/weather_provider.dart';
 import 'package:test_company/screens/home_screen.dart';
 
+import 'screens/loading_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         home: Builder(builder: (context) {
           return context.watch<WeatherProvider>().isGoodApi
               ? const MyHomePage()
-              : const CircularProgressIndicator();
+              : const LoadingScreen();
         }),
       ),
     );

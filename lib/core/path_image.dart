@@ -12,4 +12,5 @@ class PathImage {
   static const iconModerate = '$_internalPath/moderate_rain.png';
   static const iconOvercastClouds = '$_internalPath/overcast_clouds.png';
   static const iconScatterdClouds = '$_internalPath/scattered_clouds.png';
+  static const iconLoading = '$_internalPath/loadding.png';
 }

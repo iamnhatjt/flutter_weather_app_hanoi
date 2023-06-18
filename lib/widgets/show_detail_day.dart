@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:test_company/core/extention.dart';
-import 'package:test_company/core/path_image.dart';
 import 'package:test_company/model/weather_model.dart';
 
 class ShowDetailDay extends StatelessWidget {
@@ -76,8 +75,13 @@ class ShowDetailDay extends StatelessWidget {
 class ShowBriefDate extends StatelessWidget {
   final bool isSelected;
   final DateTime dateTime;
+  final WeatherModel model;
+
   const ShowBriefDate(
-      {super.key, required this.isSelected, required this.dateTime});
+      {super.key,
+      required this.isSelected,
+      required this.dateTime,
+      required this.model});
 
   @override
   Widget build(BuildContext context) {
@@ -95,7 +99,7 @@ class ShowBriefDate extends StatelessWidget {
             height: 5,
           ),
           Image.asset(
-            PathImage.iconRain,
+            model.description.toPathImage(),
             height: 30,
             width: 30,
           ),

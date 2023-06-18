@@ -162,6 +162,9 @@ class ShowMoreWeather extends StatelessWidget {
             context.read<WeatherProvider>().setSelectedDate(index);
           },
           child: ShowBriefDate(
+            model: context
+                .watch<WeatherProvider>()
+                .listDayWeathers(dayFromNow: index)[0],
             isSelected:
                 context.watch<WeatherProvider>().indexSelectedDate == index,
             dateTime: DateTime.now().add(
